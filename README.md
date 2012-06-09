@@ -3,9 +3,9 @@ HorizontalNav is a jQuery plugin that spans a horizontal navigation to fit the f
 
 *By Sebastian Nitu*
 
-Plugin URI:	[https://github.com/sebnitu/Quovolver](https://github.com/sebnitu/HorizontalNav)  
+Plugin URI:	[https://github.com/sebnitu/HorizontalNav](https://github.com/sebnitu/HorizontalNav)  
 Author URI:	[http://sebnitu.com/](http://sebnitu.com/)  
-Online Demo: [http://sebnitu.github.com/Quovolver/](http://sebnitu.github.com/HorizontalNav/)
+Online Demo: [http://sebnitu.github.com/HorizontalNav/](http://sebnitu.github.com/HorizontalNav/)
 
 ## How do I use it?
 
@@ -33,8 +33,8 @@ $(document).ready(function() {
 
 ```javascript
 $(document).ready(function() {
-  $('ul').quovolver({
-    responsive : false,
+  $('ul').horizontalNav({
+    responsive : false
   });
 });
 ```
