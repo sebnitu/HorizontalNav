@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]><html class="ie9 ie8 ie7 ie6" lang="en"><![endif]-->
+<!--[if IE 7]><html class="ie9 ie8 ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
 <head>
 	<title>BaseDemo - HorizontalNav</title>
 	
 	<!-- Include jQuery -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript"></script>
 	
 	<!-- 
 		Include BaseDemo
@@ -33,26 +37,26 @@
 	.horizontal-nav ul {
 		background: #128F9A;
 		float: left;
-		list-style: none; 
 		text-align: center;
-		margin: 0;
-		padding: 0;
 		border-radius: 6px;
+		border: 1px solid #0e7079;
 	}
 	.horizontal-nav ul li {
 		float: left;
-		margin: 0;
-		padding: 0;
-		border-left: 1px solid rgba(255,255,255, 0.25);
+		border-left: 1px solid #0e7079;
 	}
 	.horizontal-nav ul li:first-child {
 		border-left: 0 none;
 	}
 	.horizontal-nav ul li a {
 		display: block;
-		margin: 0;
 		padding: 10px 20px;
 		color: #fff;
+		border-top: 1px solid rgba(255,255,255, 0.25);
+		border-left: 1px solid rgba(255,255,255, 0.25);
+	}
+	.horizontal-nav ul li:first-child a {
+		border-left: 0 none;
 	}
 	.horizontal-nav ul li a:hover {
 		background: #12808a;
@@ -168,26 +172,26 @@ $(document).ready(function() {
 .horizontal-nav ul {
 	background: #128F9A;
 	float: left;
-	list-style: none; 
 	text-align: center;
-	margin: 0;
-	padding: 0;
 	border-radius: 6px;
+	border: 1px solid #0e7079;
 }
 .horizontal-nav ul li {
 	float: left;
-	margin: 0;
-	padding: 0;
-	border-left: 1px solid rgba(255,255,255, 0.25);
+	border-left: 1px solid #0e7079;
 }
 .horizontal-nav ul li:first-child {
 	border-left: 0 none;
 }
 .horizontal-nav ul li a {
 	display: block;
-	margin: 0;
 	padding: 10px 20px;
 	color: #fff;
+	border-top: 1px solid rgba(255,255,255, 0.25);
+	border-left: 1px solid rgba(255,255,255, 0.25);
+}
+.horizontal-nav ul li:first-child a {
+	border-left: 0 none;
 }
 .horizontal-nav ul li a:hover {
 	background: #12808a;
@@ -209,7 +213,7 @@ $(document).ready(function() {
 			<div class="sep"><span class="left-arrow arrow"></span><span class="right-arrow arrow"></span></div>
 			
 			<div class="options">
-				<div class="description">
+				<div class="description clearfix">
 					<h2>Available Options</h2>
 				</div><!-- .description -->
 				
