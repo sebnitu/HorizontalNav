@@ -29,14 +29,15 @@
 				var ul_wrap = $this;
 			}
 			
-			// let's add some clearfixing to the ul wrapper
-			ul_wrap.css({ 'zoom' : '1' }).append('<span class="clearHorizontalNav">').find('.clearHorizontalNav').css({
+			// let's append a clearfixing element to the ul wrapper
+			ul_wrap.css({ 'zoom' : '1' }).append('<div class="clearHorizontalNav">');
+			$('.clearHorizontalNav').css({
 				'display' : 'block',
 				'overflow' : 'hidden',
 				'visibility' : 'hidden',
 				'width' : 0,
 				'height' : 0,
-				'clear' : 'both',
+				'clear' : 'both'
 			});
 			
 			// Grab elements we'll need and add some default styles
@@ -45,7 +46,7 @@
 				li_last = li.last(), // Last list item
 				li_count = li.size(), // The number of navigation elements
 				li_a = li.find('> a').css({ 'padding-left' : 0, 'padding-right' : 0 }); // Remove padding from the links
-	
+		
 			// If set to responsive, re-construct after every browser resize
 			if ( o.responsive === true ) {
 				resizeTrigger( _construct );
@@ -92,15 +93,20 @@
 					li_padding = Math.floor( extra_width / li_count );
 				
 				// Cycle through the list items and give them widths
-				li.each(function() {
+				li.each(function(index) {
 					var li_width = trueInnerWidth( $(this) );
-					$(this).css({ 'width' : (li_width + li_padding) });
+					$(this).css({ 'width' : (li_width + li_padding) + 'px' });
 				});
 				
 				// Get the leftover pixels after we set every itms width
-				// and add the leftovers to the last navigation item
 				var li_last_width = trueInnerWidth(li_last) + ( (full_width - ul_width_extra) - trueInnerWidth(ul) );
-				li_last.css({ 'width' : li_last_width });
+				// I hate to do this but for some reason Firefox (v13.0) and IE are always
+				// one pixel off when rendering. So this is a quick fix for that.
+				if ($.browser.mozilla || $.browser.msie) {
+					li_last_width = li_last_width - 1;
+				}
+				// Add the leftovers to the last navigation item
+				li_last.css({ 'width' : li_last_width + 'px' });
 			}
 		
 		}); // @end of return this.each()
