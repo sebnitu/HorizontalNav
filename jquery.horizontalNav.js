@@ -31,7 +31,6 @@
 			
 			// let's add some clearfixing to the ul wrapper
 			ul_wrap.css({ 'zoom' : '1' }).append('<span class="clearHorizontalNav">').find('.clearHorizontalNav').css({
-				'content' : '\0020',
 				'display' : 'block',
 				'overflow' : 'hidden',
 				'visibility' : 'hidden',
