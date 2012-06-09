@@ -49,7 +49,7 @@
 		
 			// If set to responsive, re-construct after every browser resize
 			if ( o.responsive === true ) {
-				resizeTrigger( _construct );
+				resizeTrigger( _construct, o.responsiveDelay );
 			}
 	
 			// Initiate the plugin
@@ -114,7 +114,8 @@
 	};
 	
 	$.fn.horizontalNav.defaults = {
-		responsive : true
+		responsive : true,
+		responsiveDelay : 100
 	};
 	
 })(jQuery);
