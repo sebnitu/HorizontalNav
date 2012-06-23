@@ -41,7 +41,7 @@
 			});
 			
 			// Grab elements we'll need and add some default styles
-			var ul = ul_wrap.find('> ul'), // The unordered list element
+			var ul = $this.is('ul') ? $this : ul_wrap.find('> ul'), // The unordered list element
 				li = ul.find('> li'), // All list items
 				li_last = li.last(), // Last list item
 				li_count = li.size(), // The number of navigation elements
