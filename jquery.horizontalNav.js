@@ -84,7 +84,7 @@
 			// find and set the appropriate widths for list items
 			function _construct() {
 			
-				if ($.browser.msie && parseInt($.browser.version, 10) <= 7) {
+				if (o.tableDisplay || ($.browser.msie && parseInt($.browser.version, 10) <= 7)) {
 					
 					// IE7 doesn't support the "display: table" method
 					// so we need to do it the hard way.
@@ -133,7 +133,8 @@
 	
 	$.fn.horizontalNav.defaults = {
 		responsive : true,
-		responsiveDelay : 100
+		responsiveDelay : 100,
+		tableDisplay : true
 	};
 	
 })(jQuery);
