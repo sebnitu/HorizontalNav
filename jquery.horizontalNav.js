@@ -41,7 +41,7 @@
 			});
 			
 			// Grab elements we'll need and add some default styles
-			var ul = ul_wrap.find('> ul'), // The unordered list element
+			var ul = $this.is('ul') ? $this : ul_wrap.find('> ul'), // The unordered list element
 				li = ul.find('> li'), // All list items
 				li_last = li.last(), // Last list item
 				li_count = li.size(), // The number of navigation elements
@@ -84,7 +84,7 @@
 			// find and set the appropriate widths for list items
 			function _construct() {
 			
-				if ($.browser.msie && parseInt($.browser.version, 10) <= 7) {
+				if (o.tableDisplay || ($.browser.msie && parseInt($.browser.version, 10) <= 7)) {
 					
 					// IE7 doesn't support the "display: table" method
 					// so we need to do it the hard way.
@@ -133,7 +133,8 @@
 	
 	$.fn.horizontalNav.defaults = {
 		responsive : true,
-		responsiveDelay : 100
+		responsiveDelay : 100,
+		tableDisplay : true
 	};
 	
 })(jQuery);
