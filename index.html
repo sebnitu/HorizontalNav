@@ -75,7 +75,7 @@
 	<!-- JavaScript Test Zone -->
 	<script>
 	$(document).ready(function() {
-		$('.full-width').horizontalNav({});
+		$('.full-width').horizontalNav();
 	});
 	</script>
 	
@@ -228,14 +228,19 @@ $(document).ready(function() {
 						</thead>
 						<tbody>
 							<tr>
-								<td>responsive</td>
-								<td>true</td>
+								<td><code>responsive</code></td>
+								<td><code>true</code></td>
 								<td>This option will allow the navigation to auto adjust when the window is resized.</td>
 							</tr>
 							<tr>
-								<td>responsiveDelay</td>
-								<td>100</td>
+								<td><code>responsiveDelay</code></td>
+								<td><code>100</code></td>
 								<td>The amount of time to wait before re-adjusting the navigation on window resize. Value is set in milliseconds.</td>
+							</tr>
+							<tr>
+								<td><code>tableDisplay</code></td>
+								<td><code>true</code></td>
+								<td>Enables modern browsers to use <code>display: table</code> or set to <code>false</code> to manually calculate the widths of list items.</td>
 							</tr>
 						</tbody>
 					</table>

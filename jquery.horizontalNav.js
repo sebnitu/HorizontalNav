@@ -50,11 +50,18 @@
 			// If set to responsive, re-construct after every browser resize
 			if ( o.responsive === true ) {
 				// Only need to do this for IE7 and below
-				if ($.browser.msie && parseInt($.browser.version, 10) <= 7) {
+				// or if we set tableDisplay to false
+				if ( (o.tableDisplay != true) || ($.browser.msie && parseInt($.browser.version, 10) <= 7) ) {
 					resizeTrigger( _construct, o.responsiveDelay );
 				}
 			}
-	
+			
+			if (o.tableDisplay) {
+				console.log('table display is false');
+			} else {
+				console.log('table display is true');
+			}
+			
 			// Initiate the plugin
 			_construct();
 			
@@ -84,7 +91,7 @@
 			// find and set the appropriate widths for list items
 			function _construct() {
 			
-				if (o.tableDisplay || ($.browser.msie && parseInt($.browser.version, 10) <= 7)) {
+				if ( (o.tableDisplay != true) || ($.browser.msie && parseInt($.browser.version, 10) <= 7) ) {
 					
 					// IE7 doesn't support the "display: table" method
 					// so we need to do it the hard way.
