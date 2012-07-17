@@ -56,12 +56,6 @@
 				}
 			}
 			
-			if (o.tableDisplay) {
-				console.log('table display is false');
-			} else {
-				console.log('table display is true');
-			}
-			
 			// Initiate the plugin
 			_construct();
 			
