@@ -5,256 +5,256 @@
 <!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
 <!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
 <head>
-	<title>BaseDemo - HorizontalNav</title>
-	
-	<!-- Include jQuery -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript"></script>
-	
-	<!-- 
-	INCLUDE BASEWEB
-	
-	BaseDemo is a code demoing tool for displaying demos the easiest way possible
-	It is not required for the demo to work and should not be included in your
-	implementation of the demoed code on your projects.
-	
-	For more on BaseDemo here: https://github.com/sebnitu/BaseDemo
-	-->
-	<script src="http://sebnitu.com/BaseDemo/bootstrap.js"></script>
-	
-	<!-- Demo Plugin -->
-	<script src="jquery.horizontalNav.js"></script>
-	
-	<!-- CSS Test Zone -->
-	<style>
-		
-	/**
-	 * Base styles for horizontal navigation
-	 */
-	.horizontal-nav {
-		background: #efefef;
-		border-radius: 6px;
-	}
-	.horizontal-nav ul {
-		background: #128F9A;
-		float: left;
-		text-align: center;
-		border-radius: 6px;
-		border: 1px solid #0e7079;
-	}
-	.horizontal-nav ul li {
-		float: left;
-		border-left: 1px solid #0e7079;
-	}
-	.horizontal-nav ul li:first-child {
-		border-left: 0 none;
-	}
-	.horizontal-nav ul li a {
-		display: block;
-		padding: 10px 20px;
-		color: #fff;
-		border-top: 1px solid rgba(255,255,255, 0.25);
-		border-left: 1px solid rgba(255,255,255, 0.25);
-	}
-	.horizontal-nav ul li:first-child a {
-		border-left: 0 none;
-	}
-	.horizontal-nav ul li a:hover {
-		background: #12808a;
-	}
-	.horizontal-nav ul li:first-child a {
-		border-top-left-radius: 6px;
-		border-bottom-left-radius: 6px;
-	}
-	.horizontal-nav ul li:last-child a {
-		border-top-right-radius: 6px;
-		border-bottom-right-radius: 6px;
-	}
-		
-	</style>
-	
-	<!-- JavaScript Test Zone -->
-	<script>
-	$(document).ready(function() {
-		$('.full-width').horizontalNav();
-	});
-	</script>
-	
+    <title>BaseDemo - HorizontalNav</title>
+    
+    <!-- Include jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript"></script>
+    
+    <!-- 
+    INCLUDE BASEWEB
+    
+    BaseDemo is a code demoing tool for displaying demos the easiest way possible
+    It is not required for the demo to work and should not be included in your
+    implementation of the demoed code on your projects.
+    
+    For more on BaseDemo here: https://github.com/sebnitu/BaseDemo
+    -->
+    <script src="http://sebnitu.com/BaseDemo/bootstrap.js"></script>
+    
+    <!-- Demo Plugin -->
+    <script src="jquery.horizontalNav.js"></script>
+    
+    <!-- CSS Test Zone -->
+    <style>
+        
+    /**
+     * Base styles for horizontal navigation
+     */
+    .horizontal-nav {
+        background: #efefef;
+        border-radius: 6px;
+    }
+    .horizontal-nav ul {
+        background: #128F9A;
+        float: left;
+        text-align: center;
+        border-radius: 6px;
+        border: 1px solid #0e7079;
+    }
+    .horizontal-nav ul li {
+        float: left;
+        border-left: 1px solid #0e7079;
+    }
+    .horizontal-nav ul li:first-child {
+        border-left: 0 none;
+    }
+    .horizontal-nav ul li a {
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        border-top: 1px solid rgba(255,255,255, 0.25);
+        border-left: 1px solid rgba(255,255,255, 0.25);
+    }
+    .horizontal-nav ul li:first-child a {
+        border-left: 0 none;
+    }
+    .horizontal-nav ul li a:hover {
+        background: #12808a;
+    }
+    .horizontal-nav ul li:first-child a {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    .horizontal-nav ul li:last-child a {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+        
+    </style>
+    
+    <!-- JavaScript Test Zone -->
+    <script>
+    $(document).ready(function() {
+        $('.full-width').horizontalNav();
+    });
+    </script>
+    
 </head>
 <body>
 
-	<div class="wrapper">
-		<div class="page">
-		
-			<nav class="nav">
-				<ul>
-					<li><a href="http://sebnitu.com">About the Author</a></li>
-					<li><a href="https://github.com/sebnitu/HorizontalNav">Documentation</a></li>
-					<li class="download"><a href="https://github.com/sebnitu/HorizontalNav/zipball/master">Download</a></li>
-				</ul>
-			</nav>
-		
-			<header class="header">
-				<h1>HorizontalNav</h1>
-				<p>HorizontalNav is a jQuery plugin that spans a horizontal navigation to fit the full width of it's container. If you've ever had to create this effect on a project, you'll know it's pretty annoying to do. But this plugin makes it easy and adds support for IE7.<p>
-				<div class="custom-nav"></div>
-			</header>
-			
-			<div class="sep"><span class="left-arrow arrow"></span><span class="right-arrow arrow"></span></div>
-			
-			<div class="demo" id="demo-one">
-				<div class="description">
-					<h2>Example One</h2>
-					<p>This is an example so you can see the difference between a horizontal navigation with no fixed widths and then with a navigation that has the plugin applied to it. There are no requirements to how you style the navigation and adding padding, margins or borders to any of the elements won&rsquo;t break the effect.</p>
-				</div><!-- .description -->
+    <div class="wrapper">
+        <div class="page">
+        
+            <nav class="nav">
+                <ul>
+                    <li><a href="http://sebnitu.com">About the Author</a></li>
+                    <li><a href="https://github.com/sebnitu/HorizontalNav">Documentation</a></li>
+                    <li class="download"><a href="https://github.com/sebnitu/HorizontalNav/zipball/master">Download</a></li>
+                </ul>
+            </nav>
+        
+            <header class="header">
+                <h1>HorizontalNav</h1>
+                <p>HorizontalNav is a jQuery plugin that spans a horizontal navigation to fit the full width of it's container. If you've ever had to create this effect on a project, you'll know it's pretty annoying to do. But this plugin makes it easy and adds support for IE7.<p>
+                <div class="custom-nav"></div>
+            </header>
+            
+            <div class="sep"><span class="left-arrow arrow"></span><span class="right-arrow arrow"></span></div>
+            
+            <div class="demo" id="demo-one">
+                <div class="description">
+                    <h2>Example One</h2>
+                    <p>This is an example so you can see the difference between a horizontal navigation with no fixed widths and then with a navigation that has the plugin applied to it. There are no requirements to how you style the navigation and adding padding, margins or borders to any of the elements won&rsquo;t break the effect.</p>
+                </div><!-- .description -->
 
-				<nav class="subnav tabs">
-					<ul>
-						<li class="active"><a href="#panel-1">Demo</a></li>
-						<li><a href="#panel-2">JavaScript</a></li>
-						<li><a href="#panel-3">HTML</a></li>
-						<li><a href="#panel-4">CSS</a></li>
-					</ul>
-				</nav>
-				<div class="panels">
-					<div class="panel clearfix" id="panel-1">
-						
-						<p>Navigation with horizontalNav disabled</p>
-						<nav class="horizontal-nav clearfix">
-							<ul>
-								<li><a href="#">Navigation Item</a></li>
-								<li><a href="#">Work</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</nav>
-						<br>
-						<p>Navigation with horizontalNav enabled</p>
-						<nav class="horizontal-nav full-width">
-							<ul>
-								<li><a href="#">Navigation Item</a></li>
-								<li><a href="#">Work</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</nav>
-						
-					</div><!-- .panel -->
+                <nav class="subnav tabs">
+                    <ul>
+                        <li class="active"><a href="#panel-1">Demo</a></li>
+                        <li><a href="#panel-2">JavaScript</a></li>
+                        <li><a href="#panel-3">HTML</a></li>
+                        <li><a href="#panel-4">CSS</a></li>
+                    </ul>
+                </nav>
+                <div class="panels">
+                    <div class="panel clearfix" id="panel-1">
+                        
+                        <p>Navigation with horizontalNav disabled</p>
+                        <nav class="horizontal-nav clearfix">
+                            <ul>
+                                <li><a href="#">Navigation Item</a></li>
+                                <li><a href="#">Work</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <br>
+                        <p>Navigation with horizontalNav enabled</p>
+                        <nav class="horizontal-nav full-width">
+                            <ul>
+                                <li><a href="#">Navigation Item</a></li>
+                                <li><a href="#">Work</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                        
+                    </div><!-- .panel -->
 
-					<div class="panel" id="panel-2">
+                    <div class="panel" id="panel-2">
 <pre>// When document is ready...
 $(document).ready(function() {
-	// Call horizontalNav on the navigations wrapping element
-	$('.full-width').horizontalNav({});
+    // Call horizontalNav on the navigations wrapping element
+    $('.full-width').horizontalNav({});
 });</pre>
-					</div><!-- .panel -->
+                    </div><!-- .panel -->
 
-					<div class="panel" id="panel-3">
+                    <div class="panel" id="panel-3">
 <pre>&lt;nav class=&quot;horizontal-nav full-width&quot;&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Navigation Item&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Work&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Navigation Item&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Work&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
 &lt;/nav&gt;</pre>
-					</div><!-- .panel -->
+                    </div><!-- .panel -->
 
-					<div class="panel" id="panel-4">
+                    <div class="panel" id="panel-4">
 <pre>// There is no required CSS for this plugin to work properly
 // but here is what is being used to style this demo
 .horizontal-nav {
-	background: #efefef;
-	border-radius: 6px;
+    background: #efefef;
+    border-radius: 6px;
 }
 .horizontal-nav ul {
-	background: #128F9A;
-	float: left;
-	text-align: center;
-	border-radius: 6px;
-	border: 1px solid #0e7079;
+    background: #128F9A;
+    float: left;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #0e7079;
 }
 .horizontal-nav ul li {
-	float: left;
-	border-left: 1px solid #0e7079;
+    float: left;
+    border-left: 1px solid #0e7079;
 }
 .horizontal-nav ul li:first-child {
-	border-left: 0 none;
+    border-left: 0 none;
 }
 .horizontal-nav ul li a {
-	display: block;
-	padding: 10px 20px;
-	color: #fff;
-	border-top: 1px solid rgba(255,255,255, 0.25);
-	border-left: 1px solid rgba(255,255,255, 0.25);
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255, 0.25);
+    border-left: 1px solid rgba(255,255,255, 0.25);
 }
 .horizontal-nav ul li:first-child a {
-	border-left: 0 none;
+    border-left: 0 none;
 }
 .horizontal-nav ul li a:hover {
-	background: #12808a;
+    background: #12808a;
 }
 .horizontal-nav ul li:first-child a {
-	border-top-left-radius: 6px;
-	border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 .horizontal-nav ul li:last-child a {
-	border-top-right-radius: 6px;
-	border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }</pre>
-					</div><!-- .panel -->
+                    </div><!-- .panel -->
 
-				</div><!-- .panels -->
+                </div><!-- .panels -->
 
-			</div><!-- .demo -->
-			
-			<div class="sep"><span class="left-arrow arrow"></span><span class="right-arrow arrow"></span></div>
-			
-			<div class="options">
-				<div class="description clearfix">
-					<h2>Available Options</h2>
-				</div><!-- .description -->
-				
-				<div class="table-wrap">
-					<table width="100%" class="options-table" cellpadding="0" cellspacing="0">
-						<thead>
-							<tr>
-								<th width="20%">Key</th>
-								<th width="18%">Default value</th>
-								<th>Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><code>responsive</code></td>
-								<td><code>true</code></td>
-								<td>This option will allow the navigation to auto adjust when the window is resized.</td>
-							</tr>
-							<tr>
-								<td><code>responsiveDelay</code></td>
-								<td><code>100</code></td>
-								<td>The amount of time to wait before re-adjusting the navigation on window resize. Value is set in milliseconds.</td>
-							</tr>
-							<tr>
-								<td><code>tableDisplay</code></td>
-								<td><code>true</code></td>
-								<td>Enables modern browsers to use <code>display: table</code> or set to <code>false</code> to manually calculate the widths of list items.</td>
-							</tr>
-						</tbody>
-					</table>
-				</div><!-- .table-wrap -->
-			</div><!-- .options -->
-			
-		</div><!-- .page -->
-		
-		<footer class="footer">
-			<p><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">HorizontalNav</span> is built and maintained by <a xmlns:cc="http://creativecommons.org/ns#" href="http://sebnitu.com" property="cc:attributionName" rel="cc:attributionURL">Sebastian Nitu</a> and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>. Follow me on <a href="http://twitter.com/sebnitu">Twitter</a>, <a href="https://github.com/sebnitu">GitHub</a> and <a href="http://dribbble.com/sebnitu">Dribbble</a>.</p>
-			<p><a rel="license" href="http://creativecommons.org/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a></p>
-		</footer>
-		
-	</div><!-- .wrapper -->
+            </div><!-- .demo -->
+            
+            <div class="sep"><span class="left-arrow arrow"></span><span class="right-arrow arrow"></span></div>
+            
+            <div class="options">
+                <div class="description clearfix">
+                    <h2>Available Options</h2>
+                </div><!-- .description -->
+                
+                <div class="table-wrap">
+                    <table width="100%" class="options-table" cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th width="20%">Key</th>
+                                <th width="18%">Default value</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>responsive</code></td>
+                                <td><code>true</code></td>
+                                <td>This option will allow the navigation to auto adjust when the window is resized.</td>
+                            </tr>
+                            <tr>
+                                <td><code>responsiveDelay</code></td>
+                                <td><code>100</code></td>
+                                <td>The amount of time to wait before re-adjusting the navigation on window resize. Value is set in milliseconds.</td>
+                            </tr>
+                            <tr>
+                                <td><code>tableDisplay</code></td>
+                                <td><code>true</code></td>
+                                <td>Enables modern browsers to use <code>display: table</code> or set to <code>false</code> to manually calculate the widths of list items.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- .table-wrap -->
+            </div><!-- .options -->
+            
+        </div><!-- .page -->
+        
+        <footer class="footer">
+            <p><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">HorizontalNav</span> is built and maintained by <a xmlns:cc="http://creativecommons.org/ns#" href="http://sebnitu.com" property="cc:attributionName" rel="cc:attributionURL">Sebastian Nitu</a> and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>. Follow me on <a href="http://twitter.com/sebnitu">Twitter</a>, <a href="https://github.com/sebnitu">GitHub</a> and <a href="http://dribbble.com/sebnitu">Dribbble</a>.</p>
+            <p><a rel="license" href="http://creativecommons.org/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a></p>
+        </footer>
+        
+    </div><!-- .wrapper -->
 
 </body>
 </html>
