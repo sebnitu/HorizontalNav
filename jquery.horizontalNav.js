@@ -29,6 +29,27 @@
                 var ul_wrap = $this;
             }
 
+            // Grab elements we'll need and add some default styles
+            var ul = $this.is('ul') ? $this : ul_wrap.find('> ul'), // The unordered list element
+                li = ul.find('> li'), // All list items
+                li_last = li.last(), // Last list item
+                li_count = li.size(), // The number of navigation elements
+                li_a = li.find('> a'); // Remove padding from the links
+
+            if (o.minimumItems && o.minimumItems > li_count) {
+                $this.addClass("horizontalNav-notprocessed");
+                return false;
+            }
+
+            // If set to responsive, re-construct after every browser resize
+            if ( o.responsive === true ) {
+                // Only need to do this for IE7 and below
+                // or if we set tableDisplay to false
+                if ( (o.tableDisplay != true) || ($.browser.msie && parseInt($.browser.version, 10) <= 7) ) {
+                    resizeTrigger( _construct, o.responsiveDelay );
+                }
+            }
+
             if ($('.clearHorizontalNav').length ) {
                 ul_wrap.css({ 'zoom' : '1' });
             } else {
@@ -42,22 +63,6 @@
                 'height' : 0,
                 'clear' : 'both'
                 });
-            }
-
-            // Grab elements we'll need and add some default styles
-            var ul = $this.is('ul') ? $this : ul_wrap.find('> ul'), // The unordered list element
-                li = ul.find('> li'), // All list items
-                li_last = li.last(), // Last list item
-                li_count = li.size(), // The number of navigation elements
-                li_a = li.find('> a'); // Remove padding from the links
-
-            // If set to responsive, re-construct after every browser resize
-            if ( o.responsive === true ) {
-                // Only need to do this for IE7 and below
-                // or if we set tableDisplay to false
-                if ( (o.tableDisplay != true) || ($.browser.msie && parseInt($.browser.version, 10) <= 7) ) {
-                    resizeTrigger( _construct, o.responsiveDelay );
-                }
             }
 
             // Initiate the plugin
@@ -130,6 +135,7 @@
                     ul.css({ 'display' : 'table', 'float' : 'none', 'width' : '100%' });
                     li.css({ 'display' : 'table-cell', 'float' : 'none' });
                 }
+                $this.addClass("horizontalNav-processed").removeClass("horizontalNav-notprocessed");
             }
 
         }); // @end of return this.each()
@@ -139,7 +145,8 @@
     $.fn.horizontalNav.defaults = {
         responsive : true,
         responsiveDelay : 100,
-        tableDisplay : true
+        tableDisplay : true,
+        minimumItems : 0
     };
 
 })(jQuery);
