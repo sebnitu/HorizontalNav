@@ -37,7 +37,7 @@
                 li_a = li.find('> a'); // Remove padding from the links
 
             if (o.minimumItems && o.minimumItems > li_count) {
-                ul_wrap.addClass("horizontalNav-notprocessed");
+                $this.addClass("horizontalNav-notprocessed");
                 return false;
             }
 
@@ -135,7 +135,7 @@
                     ul.css({ 'display' : 'table', 'float' : 'none', 'width' : '100%' });
                     li.css({ 'display' : 'table-cell', 'float' : 'none' });
                 }
-                ul_wrap.addClass("horizontalNav-processed");
+                $this.addClass("horizontalNav-processed").removeClass("horizontalNav-notprocessed");
             }
 
         }); // @end of return this.each()
