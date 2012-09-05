@@ -151,7 +151,7 @@ $(document).ready(function() {
                     </div><!-- .panel -->
 
                     <div class="panel" id="panel-3">
-<pre>&lt;nav class=&quot;horizontal-nav full-width&quot;&gt;
+<pre>&lt;nav class=&quot;horizontal-nav full-width horizontalNav-notprocessed&quot;&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Navigation Item&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Work&lt;/a&gt;&lt;/li&gt;
@@ -242,10 +242,25 @@ $(document).ready(function() {
                                 <td><code>true</code></td>
                                 <td>Enables modern browsers to use <code>display: table</code> or set to <code>false</code> to manually calculate the widths of list items.</td>
                             </tr>
+                            <tr>
+                                <td><code>minimumItems</code></td>
+                                <td><code>0</code></td>
+                                <td>The minimum number of menu items required before auto adjusting the widths. 0 = always. Useful to prevent one or two items being huge.</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div><!-- .table-wrap -->
             </div><!-- .options -->
+            
+            <div class="sep"><span class="left-arrow arrow"></span><span class="right-arrow arrow"></span></div>
+            
+            <div class="fallback">
+                <div class="description clearfix">
+                    <h2>Fallback</h2>
+                    <p>If you add the <code>horizontalNav-notprocessed</code> class to your HTML menu then this class will be removed when HorizontalNav runs and a <code>horizontalNav-processed</code> class will be added.</p>
+                    <p>This provides an excellent fallback if HorizontalNav does not run either because of JavaScript being disabled or <code>minimumItems</code> being set and allows you to style your menu items manually under these conditions using the <code>horizontalNav-notprocessed</code> class.</p>
+                </div><!-- .description -->
+            </div><!-- .fallback -->
             
         </div><!-- .page -->
         
