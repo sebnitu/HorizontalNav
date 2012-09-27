@@ -1,0 +1,22 @@
+{
+  "name": "HorizontalNav",
+  "version": "1.0.0",
+  "description": "A jQuery plugin that spans a horizontal navigation to fit the full width of it's container.",
+  "homepage": "https://github.com/sebnitu/HorizontalNav",
+  "license" : "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+  "main": [
+    "./jquery.HorizontalNav.js"
+  ],
+  "dependencies": {
+    "jquery": "~1.7.1"
+  },
+  "keywords": [
+    "jquery",
+    "navigation",
+    "horizontal",
+  ],
+  "author": {
+    "name": "Sebastian Nitu",
+    "web": "http://sebnitu.com"
+  }
+}
