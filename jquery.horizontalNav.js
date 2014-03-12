@@ -8,7 +8,7 @@
 ;(function ($) {
   $.fn.horizontalNav = function(options) {
     'use strict';
-    
+
     // Extend our default options with those provided.
     var opts = $.extend({}, $.fn.horizontalNav.defaults, options);
 
@@ -100,7 +100,7 @@
           // so we need to do it the hard way.
 
           // Add some styles
-          ul.css({ 'float' : 'left' });
+          ul.css({ 'float' : 'left', 'width' : 'auto'  });
           li.css({ 'float' : 'left', 'width' : 'auto' });
           li_a.css({ 'padding-left' : 0, 'padding-right' : 0 });
 
