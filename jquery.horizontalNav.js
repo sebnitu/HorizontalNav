@@ -5,10 +5,10 @@
  * By Sebastian Nitu - Copyright 2014 - All rights reserved
  * Author URL: http://sebnitu.com
  */
-;(function($) {
+;(function ($) {
   $.fn.horizontalNav = function(options) {
     'use strict';
-
+    
     // Extend our default options with those provided.
     var opts = $.extend({}, $.fn.horizontalNav.defaults, options);
 
