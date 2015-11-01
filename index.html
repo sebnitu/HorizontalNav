@@ -7,23 +7,8 @@
 <head>
   <title>BaseDemo - HorizontalNav</title>
   
-  <!-- Include jQuery -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript"></script>
-  
-  <!-- 
-  INCLUDE BASEWEB
-  
-  BaseDemo is a code demoing tool for displaying demos the easiest way possible
-  It is not required for the demo to work and should not be included in your
-  implementation of the demoed code on your projects.
-  
-  For more on BaseDemo here: https://github.com/sebnitu/BaseDemo
-  -->
-  <script src="http://sebnitu.com/BaseDemo/bootstrap.js"></script>
-  
-  <!-- Demo Plugin -->
-  <script src="jquery.horizontalNav.js"></script>
-  
+	<link rel="stylesheet" href="bd.styles.css">
+    
   <!-- CSS Test Zone -->
   <style>
     
@@ -72,13 +57,6 @@
     
   </style>
   
-  <!-- JavaScript Test Zone -->
-  <script>
-  $(document).ready(function() {
-    $('.full-width').horizontalNav();
-  });
-  </script>
-  
 </head>
 <body>
 
@@ -89,7 +67,7 @@
         <ul>
           <li><a href="http://sebnitu.com">About the Author</a></li>
           <li><a href="https://github.com/sebnitu/HorizontalNav">Documentation</a></li>
-          <li class="download"><a href="https://github.com/sebnitu/HorizontalNav/zipball/master">Download</a></li>
+          <li class="download"><a href="https://github.com/sebnitu/HorizontalNav/zipball/master"><img src="bd.download.png" alt=""> Download</a></li>
         </ul>
       </nav>
     
@@ -269,6 +247,21 @@ $(document).ready(function() {
     </footer>
     
   </div><!-- .wrapper -->
+
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="bd.jquery.min.js"%3E%3C/script%3E'))</script>
+
+<!-- JavaScript -->
+<script src="bd.ui.js"></script>
+<script src="jquery.horizontalNav.js"></script>
+  
+<!-- JavaScript Test Zone -->
+<script>
+$(document).ready(function() {
+  $('.full-width').horizontalNav();
+});
+</script>
 
 </body>
 </html>
